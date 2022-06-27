@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saquitos de Mechi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="imagenes/SaquitosdeMechi.png">
+
+
+</head>
+<body>
+
+<header class="HeaderDesktop">
+    <h1 class="HeaderDesktop-tittle">
+        <img class="SaquitosdeMechiLogo" src="./imagenes/SaquitosdeMechi.png" alt="Logo de Saquitos de Mechi">
+    </h1>
+    <nav class="NavDesktop">
+        <ul class="UlNavDesk">
+            <li class="LiUlNavDesk">
+                <a href="index.html" class="ALiUlNavDesk">INICIO</a></li>
+            <li class="LiUlNavDesk">
+                <a href="index.html#Tejidos" class="ALiUlNavDesk">TEJIDOS</a></li>
+            <li class="LiUlNavDesk">
+                <a href="#Contacto" class="ALiUlNavDesk">CONTACTO</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="SectionExito Section">
+    <div class="SectionExtito-div">
+        <p class="SectionExito-p">Gracias por dejar tus datos! Formulario enviado con exito...</p>
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    
+</section>
+<script>
+   setTimeout(function(){ window.location.replace('index.html#Contacto') },2500);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
