@@ -17,16 +17,17 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO AL HEADER PARA FORMATO DESKTOP Y TABLET
     background-color: #ececec;
     width: 100%;
     max-width: 100vw;
+    z-index: 10000;
 }
 .HeaderDesktop-tittle{
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
     height: 15vh;
-    width: 15vh;
+    width: 10vh;
 }
 .SaquitosdeMechiLogo{
-    height: 10vh;
+    height: 7vh;
     margin: auto;
 }
 .NavDesktop{
@@ -99,6 +100,7 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION INICIO
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
+    margin-bottom: 2vh;
 }
 .inicio-DivImagen{
     margin: auto;
@@ -141,6 +143,14 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION TEJIDOS
 .MuestraImagen{
     width:18.5vw;
     padding: .1vw;
+    
+    transition: .5s;
+    height: 18.5vw;
+}
+.MuestraImagen:hover{
+    transform:scale(1.3);
+    padding: .1vw;
+    z-index: 10;
 }
 
 /*
@@ -150,172 +160,109 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION CONTACTO
 */
 
 
-.Section-Contacto{
-    min-height: 80vh;
-    max-width: 100%;
-    background-color:#702f59 ;
+.footerTag{
+    width:100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: #702f59;
     display: flex;
     flex-flow: row wrap;
-    padding-bottom: 20vh;
-}
-.div-form{
-    border: none;
-    margin: auto;
-}
-form{
-    background-color: #86436f85;
-    max-width: 500px;
-    padding:12vh;
-
-}
-.form-row{
-    width: 100%;
-    height: 12vh;
-    color: #ececec;
-    
-}
-.form-row_TextArea{
-    height: auto;
-    color: #ececec;
-
-}
-.form-row_label{
-    color: #ecececcc;
-}
-.form-row_input{
-    width: 100%;
-    max-width: 450px;
-    background-color:  #ecececaa;
-    color: #702f59;
-    border: none;
-    height: 5vh;
-    border-radius: 3px;
-    padding-left: 15px;
-    box-sizing: border-box;
-}
-.form-row_input::placeholder{
-    color: #994f7f;
-    
-}
-
-textarea{
-    box-sizing: border-box;
-    background-color: #ecececaa;
-    resize: none;
-    width: 100%;
-    color: #702f59;
-    height: 15vh;
-    border-radius: 3px;
-    max-width: 450px;
-    padding-left: 15px;
-    padding-top: 5px;
-    
-}
-textarea::placeholder{
-    color: #994f7f;
-    
-}
-
-.form-DivSend{
-    
-    display: flex;
-    flex-flow: row wrap;
-    box-sizing: border-box;
-    padding: 2px;
-}
-.Form-DivSend_but{
-    margin: auto;
-    width: 200px;
-    height: 40px;
-    font-size: 30px;
-    background-color: #86436f;
-    color: #ececec;
-    border: none;
-}
-
-.div-footer{
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    margin-top: 0;
     min-height: 60vh;
+}
+.containerOfFooter{
+    width:90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footerForm{
+    width:60%;
+    min-height: 65vh;
+    display: flex;
+    flex-flow: row wrap;
 
 }
-.footer-Tit{
-    width: 100%;
-    color: #ececec;
-    font-size: 40px;
+.form{
+    background-color: #91503d;
+    width: 65%;
+    padding:4%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+}
+.formRow{
+    width:92%;
+    min-height: 5vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+}
+.tittleOfForm{
+    color: #fcfcfccc;
+}
+.singleInput{
+    width: 100%;    
+    background-color:#fcfcfccc;
+    border: none;
+    padding-left: 10px;
+}
 
-}
-.footer-Tit1{
-    margin-top: 0px;
-}
-.footer-Tit2{
-    margin-top: 50px;
-
-}
-.footer-Ul{    
-    width: 100%;
-    list-style: none;   
-}
-.footerUl_Li__a{
-    color: #e1d7d7;
-    text-decoration: none;
-    font-size: 26px;
-}
-.footerUl_Li__a:hover{
-    transform: scale(.1);
-    color: #fcfcfc;
-    transition: .5s;
+.ph-color::placeholder{
+    color: #91503d;
     
 }
-@media screen and (max-width: 1090px) {
-    .form{
-        padding:6vh;
-    }
-    .div-footer{
-        box-sizing: border-box;
-        width: 45%;
-        padding-left: 50px;
-        max-width: 500px;
-        margin: auto;   
-        min-height: 54vh;
-    
-    }
-    .footer-Tit{
-        font-size: 25px;
-    }
+.textarea{
+    color: #91503d;
+    width: 100%;
+    background-color:#fcfcfccc;    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footerInf{
+    width: 30%;
+    height: 65vh;
+    color:#ececec;
+    display: flex;
+    flex-flow: column wrap;
+}
+.footerBlock{
+    color: inherit;
+    width: 100%;
+    height: 100px;   
+}
+.footerBlock-tittle{
+    color: inherit;
+    font-size:20px;
+}
+.footerList{
+    color: inherit;
+    list-style: none;
+}
+.footerListItem{
+    color: inherit;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 800px) {
     .inicio-DivTexto{
-        width: 100%;
+        width: 100vh;
         margin: auto;
         margin-top: 5vh;
     }
     .inicio-DivImagen{
         width: 100%;
-        margin: auto;
+        height: auto;
+        display: flex;
     }
     .inicio-DivImagen_SaquitoSalva{
         max-width: 100vw;
-        width: 100vw;
-        height: auto;
-        max-height: 100vh;
+        max-height: 60vh;
         margin: auto;
-    
+        margin-top: 0;
     }
     .Section-Inicio{
         padding-top: 15vh;
-    }
-}
-@media screen and (max-width: 570px) {
-    .Section-Contacto{
-        padding-bottom: 10vh;
-    }
-    .div-footer{
-        padding-left: 0;
-        margin-top: 5vh;
-    }
-    .ALiUlNavDesk{
-        font-size: 18px;
     }
 }
 .SectionExito{
