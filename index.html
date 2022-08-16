@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Tangerine&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans&display=swap" rel="stylesheet">
+    
     <link rel="icon" type="image/png" href="imagenes/SaquitosdeMechi.png">
+
 </head>
 <body>
 
@@ -24,7 +29,7 @@
             <li class="LiUlNavDesk">
                 <a href="#Tejidos" class="ALiUlNavDesk">TEJIDOS</a></li>
             <li class="LiUlNavDesk">
-                <a href="#Contacto" class="ALiUlNavDesk">CONTACTO</a></li>
+                <a href="#contacto" class="ALiUlNavDesk">CONTACTO</a></li>
         </ul>
     </nav>
 </header>
@@ -32,9 +37,9 @@
     <section class="Section-Inicio Section" id="Inicio">
         <div class="inicio-DivTexto">
             <h2 class="inicio-Titulo">Saquitos de Mechi</h2>
-            <p class="inicio-Parrafo">¡Hola! Soy Mechi y este es mi emprendimiento. Aprendi a tejer cuando tenía 11 años, me enseñó mi abuela. Hoy tengo casi 60 años y lo sigo haciendo. Principalmente me enfoco en tejer saquitos para bebes, desde recién nacidos, hasta un año, pero también hago todo tipo de cosas.</p>
-            <p class="inicio-Parrafo"> Saquitos de Mechi empezó de a poco. Siempre hice tejidos para regalar a conocidos hasta que ellos me los empezaron a pedir para hacer sus regalos, y de a poco fui creciendo. Llegó un momento, en el que me quise enfocar 100% a la venta de saquitos, entonces para hacerme más conocida y "formalizar" mi negocio, decidi crearme mi instagram.</p>
-            <p class="inicio-Parrafo">Hoy ya son más de 5 años desde que me dedico a esto y me encanta. Nada mejor que me elijan para vestir a sus hijos, amigos o familiares!</p>
+            <p class="inicio-Parrafo">¡Hola! Soy Mechi y este es mi emprendimiento. Aprendí a tejer cuando tenía 11 años, me enseñó mi abuela. Hoy tengo casi 60 años y lo sigo haciendo. Principalmente me enfoco en tejer saquitos para bebes, desde recién nacidos, hasta un año, pero también hago todo tipo de cosas.</p>
+            <p class="inicio-Parrafo"> Saquitos de Mechi empezó de a poco. Siempre hice tejidos para regalar a conocidos hasta que, me los empezaron a pedir para hacer regalos, y de a poco fui empezando a vender. Llegó un momento, en el que me quise enfocar 100% a la venta de saquitos, entonces para  "formalizar" mi negocio, decidi crearme mi instagram.</p>
+            <p class="inicio-Parrafo">Hoy ya son más de 5 años desde que me dedico a esto y me encanta y puedo decir que no hay nada más lindo que me elijan para vestir a sus hijos, ahijados, sobrinos o familiares!</p>
             </p>
         </div>
         <div class="inicio-DivImagen">
@@ -70,12 +75,12 @@
     </section>
 </main>
 
-    <footer class="footerTag">
+    <footer id="contacto" class="footerTag">
         <div class="containerOfFooter">
             <div class="footerForm">
                 <form action="form.php" method="POST" class="form">
                     <div class="formRow">
-                        <h4 class="tittleOfForm">Deje su comentario:</h4>
+                        <h4 class="tittleOfForm">Deje su mensaje:</h4>
                     </div>
                     <div class="formRow">
                         <input class="singleInput ph-color" type="email" name="email" placeholder="Email">
@@ -98,9 +103,9 @@
                 <div class="footerBlock">
                     <h4 class="footerBlock-tittle">Navegá</h4>
                     <ul class="footerList">
-                        <li class="footerListItem">Inicio</li>
-                        <li class="footerListItem">Mis Tejidos</li>
-                        <li class="footerListItem">Contacto</li>
+                        <li class="footerListItem"><a class="footerLink" href="#Inicio"> Inicio </a></li>
+                        <li class="footerListItem"><a class="footerLink" href="#Tejidos"> Mis Tejidos </a></li>
+                        <li class="footerListItem"><a class="footerLink" href="#contacto"> Contacto </a></li>
                     </ul>
                 </div>
                 <div class="footerBlock">
@@ -113,6 +118,9 @@
             </div>
         </div>
     </footer>
+    <div class="WeLandYouStamp">
+        <p class="WeLandYouStampText">Desarrollado por WE LAND YOU - <a class="WeLandYouStampLink" target="_blank" href="https://welandyou.com">Ver más</a></p>
+    </div>
 
 
     

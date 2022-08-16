@@ -1,9 +1,12 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Lobster', cursive;
     color: #91503d;
+    font-family: 'Poppins', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 /*
 --------------------------------------------------------------------------------
@@ -16,7 +19,7 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO AL HEADER PARA FORMATO DESKTOP Y TABLET
     flex-flow: row wrap;
     background-color: #ececec;
     width: 100%;
-    max-width: 100vw;
+    max-width: 100%;
     z-index: 10000;
 }
 .HeaderDesktop-tittle{
@@ -24,7 +27,8 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO AL HEADER PARA FORMATO DESKTOP Y TABLET
     display: flex;
     flex-flow: row wrap;
     height: 15vh;
-    width: 10vh;
+    width: 10vh;    
+    font-family: 'Lobster', italic;
 }
 .SaquitosdeMechiLogo{
     height: 7vh;
@@ -38,7 +42,8 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO AL HEADER PARA FORMATO DESKTOP Y TABLET
     flex-flow: row wrap;
     height: 15vh;
 }
-.LiUlNavDesk{
+.LiUlNavDesk{    
+    font-family: 'Lobster', italic;
     display: inline;
     width: auto;
     margin: auto;
@@ -52,12 +57,14 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO AL HEADER PARA FORMATO DESKTOP Y TABLET
     color: #91503d;
     font-size: 20px;
     margin: auto;
+    font-family: 'Lobster', italic;
 }
 .ALiUlNavDesk:hover{
 
     color: #B7735F;
     transform: scale(1.1);
     transition: .1s;
+    font-family: 'Lobster', italic;
 }
 /*
 --------------------------------------------------------------------------------
@@ -84,7 +91,7 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION INICIO
 }
 .inicio-DivTexto{
     margin: auto;
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-flow: column wrap;
 }
@@ -94,6 +101,7 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION INICIO
     height: 10vh;
     font-size: 26px;
     text-align: center;
+    font-family: 'Lobster', italic; 
 }
 .inicio-Parrafo{
     width: 70%;
@@ -104,15 +112,39 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION INICIO
 }
 .inicio-DivImagen{
     margin: auto;
-    width: 50%;
+    width: 30%;
     height: 100%;
     display: flex;
 }
 .inicio-DivImagen_SaquitoSalva{
-    max-width: 40vw;
+    max-width: 26vw;
     max-height: 60vh;
     margin: auto;
     margin-top: 0;
+}
+@media screen and (max-width: 800px) {
+    .inicio-DivTexto{
+        width: 100vh;
+        margin: auto;
+        margin-top: 5vh;
+    }
+    .inicio-Parrafo{
+        width: 85%;
+    }
+    .inicio-DivImagen{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    .inicio-DivImagen_SaquitoSalva{
+        max-width: 100vw;
+        max-height: 60vh;
+        margin: auto;
+        margin-top: 0;
+    }
+    .Section-Inicio{
+        padding-top: 15vh;
+    }
 }
 
 /*
@@ -127,6 +159,7 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION TEJIDOS
 .Section-Tejidos_Titulo{
     width: 100%;
     text-align: center;
+    font-family: 'Lobster', italic;
 
 }
 .GaleriaDeImagenes{
@@ -137,20 +170,38 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION TEJIDOS
     padding-bottom: 5vh;
     display: flex;
     flex-flow: row wrap;
-
-
 }
 .MuestraImagen{
     width:18.5vw;
     padding: .1vw;
-    
     transition: .5s;
     height: 18.5vw;
 }
+
 .MuestraImagen:hover{
     transform:scale(1.3);
     padding: .1vw;
     z-index: 10;
+}
+@media screen and (max-width: 550px) {
+    .GaleriaDeImagenes{
+        padding: 0;
+        padding-top: 5vh;
+        padding-bottom: 0;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .MuestraImagen{
+        width: 100vw;
+        /* max-width:100vw; */
+        height: auto;
+        padding: .1vw;
+        transition: .5s;
+    }
+    .MuestraImagen:hover{
+        transform:scale(1);
+    }
+
 }
 
 /*
@@ -162,7 +213,7 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION CONTACTO
 
 .footerTag{
     width:100%;
-    padding-top: 5vh;
+    padding-top: 17vh;
     padding-bottom: 5vh;
     background-color: #702f59;
     display: flex;
@@ -190,6 +241,7 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION CONTACTO
     flex-flow: row wrap;
     margin: auto;
 }
+
 .formRow{
     width:92%;
     min-height: 5vh;
@@ -215,6 +267,7 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION CONTACTO
 .textarea{
     color: #91503d;
     width: 100%;
+    max-height: 30vh;
     background-color:#fcfcfccc;    
     padding-left: 10px;
     padding-right: 10px;
@@ -224,16 +277,16 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION CONTACTO
     height: 65vh;
     color:#ececec;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
 }
 .footerBlock{
     color: inherit;
     width: 100%;
-    height: 100px;   
+    height: 15vh;
 }
 .footerBlock-tittle{
     color: inherit;
-    font-size:20px;
+    font-size:25px;    
 }
 .footerList{
     color: inherit;
@@ -242,29 +295,63 @@ A PARTIR DE ACA LE VAMOS A DAR FORMATO A LA SECTION CONTACTO
 .footerListItem{
     color: inherit;
     font-size: 16px;
+    font-weight:lighter;
+}
+.footerLink{    
+    font-size: 16px;
+    font-weight:lighter;
+    text-decoration: none;
+    color: #dbd8d8;
+}
+.footerLink:hover{
+    color: #ececec;
 }
 
-@media screen and (max-width: 800px) {
-    .inicio-DivTexto{
-        width: 100vh;
-        margin: auto;
-        margin-top: 5vh;
+
+@media screen and (max-width: 550px) {
+    .footerForm{
+        width:100%;
+    
     }
-    .inicio-DivImagen{
-        width: 100%;
+    .form{
+        width: 80vw;
+    }
+    .footerInf{
+        width: 90%;
         height: auto;
-        display: flex;
+        padding-bottom: 5vh;
     }
-    .inicio-DivImagen_SaquitoSalva{
-        max-width: 100vw;
-        max-height: 60vh;
-        margin: auto;
-        margin-top: 0;
+    .footerBlock{
+        width: 40vw ;
+        padding: 4%;
+        box-sizing: border-box;
     }
-    .Section-Inicio{
-        padding-top: 15vh;
-    }
+    
 }
+
+.WeLandYouStamp{
+    width: 100%;
+    height: 10vh;
+    background-color: #4d223e;
+    display: flex;
+}
+.WeLandYouStampText{
+    color: #ececec;
+    font-size: 15px;
+    margin: auto;
+    
+}
+.WeLandYouStampLink{
+    color: #ececec;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+/* 
+---------------------
+EXITO html
+---------------------
+ */
 .SectionExito{
     display: flex;
     flex-flow: row wrap;
